@@ -2,6 +2,7 @@
 import random
 
 number = random.randint(-10000, 10000)
+
 string = "Last digit of"
 if number > 0:
     ls_num = number % 10
