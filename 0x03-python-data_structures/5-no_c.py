@@ -8,6 +8,6 @@ def no_c(my_string):
 
     for i in range(length):
         if my_string[i] == "C" or my_string[i] == "c":
-            new_string = new_string[: (i - j)] + new_string[(i + 1) :]
+            new_string = new_string[: (i - j)] + my_string[(i + 1) :]
             j += 1
     return new_string
