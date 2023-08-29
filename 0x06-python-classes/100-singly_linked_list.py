@@ -1,11 +1,27 @@
 #!/usr/bin/python3
+"""Node module."""
+
+
 class Node:
+    """Defines Node."""
+
     def __init__(self, data, next_node=None):
+        """Constructor
+
+        Args:
+            data: collected number
+            next_node: Defaults to None.
+        """
         self.data = data
         self.next_node = next_node
 
     @property
     def data(self):
+        """Property for collected data
+
+        Returns:
+            TypeError: if data is not intiger
+        """
         return self.__data
 
     @data.setter
@@ -16,6 +32,11 @@ class Node:
 
     @property
     def next_node(self):
+        """Property for next node
+
+        Returns:
+            TypeError: if node is not an object
+        """
         return self.__next_node
 
     @next_node.setter
@@ -26,10 +47,19 @@ class Node:
 
 
 class SinglyLinkedList:
+    """Defines SinglyLinkedList"""
+
     def __init__(self):
+        """Constructor
+        """
         self.head = None
 
     def __str__(self):
+        """Constructor String
+
+        Returns:
+            ret: returns ret from the back of the string
+        """
         ret = ""
         node = self.head
         while node:
@@ -38,6 +68,11 @@ class SinglyLinkedList:
         return ret[:-1]
 
     def sorted_insert(self, value):
+        """Sortes value
+
+        Args:
+            value: Value yo be sorted
+        """
         new = Node(value)
         if not self.head:
             self.head = new
