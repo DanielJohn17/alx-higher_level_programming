@@ -3,6 +3,8 @@
 
 
 class Square:
+    """Defines a square."""
+    
     def __init__(self, size=0):
         """Constructor.
 
@@ -26,4 +28,4 @@ class Square:
         Returns:
             The size squared.
         """
-        return (self.__size ** 2)
+        return self.__size ** 2
