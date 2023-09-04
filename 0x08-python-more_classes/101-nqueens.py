@@ -84,6 +84,7 @@ def solveNQueen(size):
 
 
 if __name__ == "__main__":
+    """Main"""
     import sys
 
     if len(sys.argv) == 1 or len(sys.argv) > 2:
