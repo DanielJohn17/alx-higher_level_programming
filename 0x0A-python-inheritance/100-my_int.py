@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Module for MyInt"""
+
+
 class MyInt(int):
     """ Class that inherits from class int"""
 
