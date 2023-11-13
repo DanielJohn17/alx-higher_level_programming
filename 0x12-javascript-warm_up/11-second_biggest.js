@@ -12,6 +12,8 @@ for (i = 2; i < process.argv.length; i++) {
 
 if (arrayNum.length > 1) {
   biggest = Math.max(...arrayNum);
+  arrayNum[i] = -Infinity;
+  biggest = Math.max(...arrayNum);
 }
 
 console.log(biggest);
