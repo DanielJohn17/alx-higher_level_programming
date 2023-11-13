@@ -12,6 +12,7 @@ for (i = 2; i < process.argv.length; i++) {
 
 if (arrayNum.length > 1) {
   biggest = Math.max(...arrayNum);
+  i = arrayNum.indexOf(biggest);
   arrayNum[i] = -Infinity;
   biggest = Math.max(...arrayNum);
 }
