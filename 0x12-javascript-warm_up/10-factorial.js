@@ -1,9 +1,9 @@
 #!/usr/bin/node
 function factorial (num) {
+  let multiple = 1;
   if (isNaN(num) || num === 1) {
     return (1);
   } else {
-    let multiple = 1;
     for (let i = num; i > 0; i--) {
       multiple *= i;
     }
