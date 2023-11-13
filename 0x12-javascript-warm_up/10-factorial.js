@@ -1,6 +1,6 @@
 #!/usr/bin/node
 function factorial (num) {
-  if (isNaN(num)) {
+  if (isNaN(num) || num === 1) {
     console.log('1');
   } else {
     let multiple = 1;
