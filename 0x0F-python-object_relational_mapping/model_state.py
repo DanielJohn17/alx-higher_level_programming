@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Contains State class and Base, an 
+"""Contains State class and Base, an
 instance of declarative_base()"""
 
 from sqlalchemy import Column, Integer, String, MetaData
